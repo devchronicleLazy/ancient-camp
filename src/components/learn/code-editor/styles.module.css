@@ -1,0 +1,46 @@
+.editorContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.editorContainer :global(.CodeMirror) {
+  height: calc(100% - 250px); /* Adjust for instructions */
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.editorContainer :global(.CodeMirror-gutters) {
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+}
+
+.editorContainer :global(.CodeMirror-linenumber) {
+  color: #666;
+}
+
+.editorContainer :global(.CodeMirror-selected) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.editorContainer :global(.CodeMirror-activeline-background) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.editorContainer :global(.CodeMirror-matchingbracket) {
+  color: #7cb342 !important;
+  border-bottom: 1px solid #7cb342;
+}
+
+.editorContainer :global(.code-instructions) {
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editorContainer :global(.code-instructions svg) {
+  display: inline;
+  vertical-align: middle;
+}
